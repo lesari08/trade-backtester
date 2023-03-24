@@ -124,9 +124,15 @@ class HistoricCSVDataHandler(DataHandler):
 			header=0, index_col=0, parse_dates=True,
 			names=[
 			'datetime', 'open', 'high',
-			'low', 'close', 'volume', 'adj_close'
+			'low', 'close', 'adj_close', 'volume'
 			]
-			).sort()
+			).sort_values('datetime')
+			# Initialize a key with a default value for each symbol in symbol_list
+			self.latest_symbol_data[s] = []
+    		
+			# Initialize a key with a default value for each symbol in symbol_list
+    		#
+		print(self.latest_symbol_data)
 		# Combine the index to pad forward values
 		"""
 		One of the benefits of using pandas as a datastore internally within the HistoricCSVData-

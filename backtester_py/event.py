@@ -57,7 +57,8 @@ class SignalEvent(Event):
 		self.strategy_id = strategy_id
 		self.symbol = symbol
 		self.datetime = datetime
-		self.signal_type = signal_	
+		self.signal_type = signal_type	
+		self.strength = strength
 		
 class OrderEvent(Event):
 	"""

@@ -210,18 +210,18 @@ class Portfolio(object):
 		"""
 		Creates a list of summary statistics for the portfolio.
 		"""
-		total_return = self.equity_curve[’equity_curve’][-1]
-		returns = self.equity_curve[’returns’]
-		pnl = self.equity_curve[’equity_curve’]
+		total_return = self.equity_curve['equity_curve'][-1]
+		returns = self.equity_curve['returns']
+		pnl = self.equity_curve['equity_curve']
 		sharpe_ratio = create_sharpe_ratio(returns, periods=252*60*6.5)
 		drawdown, max_dd, dd_duration = create_drawdowns(pnl)
-		self.equity_curve[’drawdown’] = drawdown
+		self.equity_curve['drawdown'] = drawdown
 		stats = [("Total Return", "%0.2f%%" % \
 		  ((total_return - 1.0) * 100.0)),
 		  ("Sharpe Ratio", "%0.2f" % sharpe_ratio),
 		  ("Max Drawdown", "%0.2f%%" % (max_dd * 100.0)),
 		  ("Drawdown Duration", "%d" % dd_duration)]
-		self.equity_curve.to_csv(’equity.csv’)
+		self.equity_curve.to_csv('equity.csv')
 		return stats
 
 print("I sat still and hoped it would help my wings grow, \
