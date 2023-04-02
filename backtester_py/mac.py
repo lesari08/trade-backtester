@@ -95,5 +95,3 @@ if __name__ == "__main__":
 	)
 	#backtest.output_performance()
 	backtest.simulate_trading()			
-
-print("loveeee rain down on me...mac.py")
