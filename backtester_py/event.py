@@ -144,7 +144,3 @@ class FillEvent(Event):
 		else: # Greater than 500
 			full_cost = max(1.3, 0.008 * self.quantity)
 		return full_cost
-
-
-
-print("seven thirty 8...ayeee.. from event.py")
