@@ -11,4 +11,4 @@ Trade backtester is a python based project allowing users to upload historicial 
 - Visualizations of performance metrics and trading signals
 
 ## License
-backtesterPy is licensed under the MIT License. See the LICENSE file for details.
+Trade Backtester is licensed under the MIT License. See the LICENSE file for details.
