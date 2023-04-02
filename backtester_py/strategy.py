@@ -32,5 +32,3 @@ class Strategy(object):
 		Provides the mechanisms to calculate the list of signals.
 		"""
 		raise NotImplementedError("Should implement calculate_signals()")
-
-print("seent cho pretty cd ~cd... from strategy.py")
