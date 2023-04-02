@@ -66,5 +66,3 @@ class SimulatedExecutionHandler(ExecutionHandler):
 			'ARCA', event.quantity, event.direction, None
 			)
 			self.events.put(fill_event)
-		
-print("And give you lighting and thunder as a dowry...execution.py")
