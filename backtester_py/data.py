@@ -262,26 +262,3 @@ class HistoricCSVDataHandler(DataHandler):
 				if bar is not None:
 					self.latest_symbol_data[s].append(bar)
 		self.events.put(MarketEvent())
-		
-		
-#sanity check 	
-print("im like hey whats up hellooo... from data.py")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
