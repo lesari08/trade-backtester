@@ -123,5 +123,3 @@ class Backtest(object):
 		"""
 		self._run_backtest()
 		self._output_performance()
-print("and make the heavens your cape...backtest.py")
-
