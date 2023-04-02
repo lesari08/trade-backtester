@@ -36,6 +36,3 @@ def create_drawdowns(pnl):
 		drawdown[t]= (hwm[t]-pnl[t])
 		duration[t]= (0 if drawdown[t] == 0 else duration[t-1]+1)
 	return drawdown, drawdown.max(), duration.max()
-	
-	
-print("I stretch my arms towards the sky like blades of tall grass\nThe sun beat between my shoulders like carnival drums...performance.py")
