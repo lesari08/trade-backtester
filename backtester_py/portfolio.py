@@ -223,7 +223,3 @@ class Portfolio(object):
 		  ("Drawdown Duration", "%d" % dd_duration)]
 		self.equity_curve.to_csv('equity.csv')
 		return stats
-
-print("I sat still and hoped it would help my wings grow, \
-  so then I could really be fly.\n \
-  And then you arrived.\n...portfolio.py")
